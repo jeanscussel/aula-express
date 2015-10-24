@@ -8,4 +8,9 @@ router.get('/', function(req, res, next) {
  // res.render('index', { title: 'Listagem de cervejas' });
 });
 
+router.get('/:id', function(req, res, next) {
+  Controller.busca(req, res);
+ // res.render('index', { title: 'Listagem de cervejas' });
+});
+
 module.exports = router;
